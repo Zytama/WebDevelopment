@@ -1,0 +1,57 @@
+ Server: localhost -  Database: info
+-- phpMyAdmin SQL Dump
+-- version 2.9.2
+-- http://www.phpmyadmin.net
+-- 
+-- Host: localhost
+-- Generation Time: Oct 21, 2023 at 04:30 PM
+-- Server version: 5.0.27
+-- PHP Version: 5.2.1
+-- 
+-- Database: `info`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tb_orders`
+-- 
+
+CREATE TABLE `tb_orders` (
+  `ContactNumber` int(11) NOT NULL COMMENT 'Enter Contact Number',
+  `Address` varchar(125) NOT NULL COMMENT 'Enter Address',
+  `Country` varchar(125) NOT NULL COMMENT 'Enter Country',
+  `Desktop` varchar(200) NOT NULL COMMENT 'Enter Desktop',
+  `Notebook` varchar(200) NOT NULL COMMENT 'Enter Notebook',
+  `Minipc` varchar(200) NOT NULL COMMENT 'Enter MiniPc',
+  `Message` varchar(255) NOT NULL COMMENT 'Enter Message'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table `tb_orders`
+-- 
+
+INSERT INTO `tb_orders` (`ContactNumber`, `Address`, `Country`, `Desktop`, `Notebook`, `Minipc`, `Message`) VALUES 
+(23123, 'asdasdasd', 'asdasdasdasd', 'Acer Aspire XC-1660G-UW94', 'N/A', 'N/A', 'ewqeqasdasd1231231');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tb_records`
+-- 
+
+CREATE TABLE `tb_records` (
+  `UserName` varchar(125) NOT NULL COMMENT 'Enter username',
+  `FirstName` varchar(125) NOT NULL COMMENT 'Enter firstname',
+  `LastName` varchar(125) NOT NULL COMMENT 'Enter lastname',
+  `Email` varchar(125) NOT NULL COMMENT 'Enter email',
+  `Password` varchar(125) NOT NULL COMMENT 'Enter password'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table `tb_records`
+-- 
+
+INSERT INTO `tb_records` (`UserName`, `FirstName`, `LastName`, `Email`, `Password`) VALUES 
+('treestan', 'John Emmanuel', 'Juat', 'jm20@gmail.com', '12312312');
+
